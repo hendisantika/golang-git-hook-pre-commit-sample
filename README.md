@@ -44,6 +44,12 @@ repos:
 pre-commit install
 ```
 
+or using brew
+
+```shell
+brew pre-commit install
+```
+
 4. Run the Hooks Manually (Optional) :
    You can manually run the hooks on all files using:
 
