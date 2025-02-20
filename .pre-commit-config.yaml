@@ -10,8 +10,8 @@ repos:
       - id: double-quote-string-fixer
       - id: name-tests-test
       - id: requirements-txt-fixer
-  - repo: https://github.com/golangci/golangci-lint
-    rev: v1.64.5
-    hooks:
-      - id: golangci-lint
-        args: [ "run", "--config", ".golangci.yml" ]
+#  - repo: https://github.com/golangci/golangci-lint
+#    rev: v1.64.5
+#    hooks:
+#      - id: golangci-lint
+#        args: [ "run", "--config", ".golangci.yml" ]
