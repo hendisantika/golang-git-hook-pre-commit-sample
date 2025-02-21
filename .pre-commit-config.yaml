@@ -1,15 +1,32 @@
 repos:
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+  #  - repo: https://github.com/pre-commit/pre-commit-hooks
+  - repo: local
+    #    rev: v5.0.0
+    language: golang
     hooks:
-      - id: trailing-whitespace
-      - id: end-of-file-fixer
-      - id: check-yaml
-      - id: check-added-large-files
-      - id: debug-statements
-      - id: double-quote-string-fixer
-      - id: name-tests-test
-      - id: requirements-txt-fixer
+      #      - id: trailing-whitespace
+      #      - id: end-of-file-fixer
+      #      - id: check-yaml
+      #      - id: check-added-large-files
+      #      - id: debug-statements
+      #      - id: double-quote-string-fixer
+      #      - id: name-tests-test
+      #      - id: requirements-txt-fixer
+      #      - id: go-coverage-test
+      #        name: go coverage test
+      #        entry: go-coverage-test
+      #        types:
+      #          - go
+      #        language: script
+      #        description: Run go coverage test
+      #        pass_filenames: false
+      #        args: [ --settings-file=.go-coverage-test-settings ]
+      - id: go-unit-tests
+        name: go unit tests
+        entry: go test -p=1 ./...
+        pass_filenames: false
+        types: [ go ]
+        language: golang
 #  - repo: https://github.com/golangci/golangci-lint
 #    rev: v1.64.5
 #    hooks:

@@ -1,6 +1,6 @@
 ---
 linters:
-  disable-all: true
+  disable-all: false
   enable:
     - govet
     - staticcheck
