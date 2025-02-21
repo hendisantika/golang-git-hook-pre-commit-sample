@@ -20,23 +20,23 @@ func main() {
 	}
 }
 
-// func add(a int, b int) int {
-//	return a + b
-//}
-//
-// func Subtract(a int, b int) int {
-//	return a - b
-//}
-//
-//func Multiply(a int, b int) int {
-//	return a * b
-//}
-//
-//type person struct {
-//	Name string
-//	Age  int
-//}
-//
-//func (p person) greet() {
-//	fmt.Printf("Hello, my name is %s and I am %d years old.\n", p.Name, p.Age)
-//}
+func add(a int, b int) int {
+	return a + b
+}
+
+func Subtract(a int, b int) int {
+	return a - b
+}
+
+func Multiply(a int, b int) int {
+	return a * b
+}
+
+type person struct {
+	Name string
+	Age  int
+}
+
+func (p person) greet() {
+	fmt.Printf("Hello, my name is %s and I am %d years old.\n", p.Name, p.Age)
+}
